@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", serif;
+  margin: 0;
+}
+
+h1 {
+  color: rgb(187, 137, 217);
+  opacity: 0.4;
+  text-align: center;
+  font-size: 10rem;
+}
+.main {
+  max-width: 100%;
+  width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px 4px rgb(6, 6, 9, 0.2);
+}
+#form {
+  max-width: 100%;
+  width: 400px;
+  margin: auto;
+}
+
+.input {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+}
+.input::placeholder {
+  color: rgb(235, 235, 242);
+  font-size: 2rem;
+}
+
+.todos {
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  margin: auto;
+  display: flex;
+  overflow-wrap: break-word;
+  flex-direction: column;
+  position: relative;
+  list-style-type: none;
+  border-bottom: 2px solid #e5e5e5;
+}
+.todos li {
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  margin-left: 5px;
+  border: none;
+  font-size: 1.5rem;
+  color: grey;
+  display: none;
+}
+.close .fa-solid {
+  margin: 5px;
+}
+.todos:hover .close {
+  display: flex;
+}
+.line-through {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+small {
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  color: #515151;
+}
